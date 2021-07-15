@@ -1,0 +1,17 @@
+.post-header {
+  padding: 10px 0;
+  .user-avatar {
+    margin-right: 20px;
+  }
+
+  .link {
+    color: #000;
+  }
+  .user-nickname {
+    font-weight: bold;
+  }
+  .user-geolocation {
+    line-height: 15px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,28 @@
+.feed-line{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 67%;
+}
+
+.start-page{
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 67%;
+
+  margin-bottom: 30px;
+  h1, h2{
+    font-weight: normal;
+    margin: 3px;
+  }
+
+  .welcome-title{
+    color: #9b4bc0;
+  }
+
+  .social-name{
+    color: #3ee755;
+  }
+}

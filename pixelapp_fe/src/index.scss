@@ -1,0 +1,20 @@
+@import './styles/normalize.css';
+@import './styles/variables';
+@import './styles/fonts';
+@import './styles/inputs';
+
+
+
+body {
+  background-color: #FAFAFA;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+@import './modules/index';
+@import './shared/components/index';

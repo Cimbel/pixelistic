@@ -1,0 +1,26 @@
+{
+  "src_folders" : ["e2e"],
+  
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "./e2e-config/selenium-server-standalone-3.14.0.jar",
+    "log_path" : "",
+    "port" : 4445,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "./e2e-config/chromedriver"
+    }
+  },
+
+  "test_settings" : {
+    "default" : {
+      "launch_url" : "http://localhost",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    }
+  }
+}

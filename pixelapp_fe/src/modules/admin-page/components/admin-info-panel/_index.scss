@@ -1,0 +1,86 @@
+.admin-info-panel {
+  display: flex;
+  max-width: 92%!important;
+  margin: auto auto!important;
+  align-items: center;
+  justify-content: space-between;
+  z-index: -1;    
+
+  &_avatar {
+    width: 130px!important;
+    height: 130px!important;
+    margin: 20px 15px 20px 30px;
+    border: 6px inset #8196e0;
+  }
+
+  &_profile {
+    display: flex;
+    align-items: center;
+  }
+
+  &_title {
+    font-size: 14px;
+    margin-top: 3px;
+    color: #8c8c8c;
+  }
+}
+
+.count-bar {
+  display: flex;
+  justify-content: space-between;
+  z-index: -1;
+  padding: 20px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(184,184,184,1);
+  -moz-box-shadow: 2px 2px 5px 1px rgba(184,184,184,1);
+  box-shadow: 2px 2px 5px 1px rgba(184,184,184,1);
+  margin-bottom: 30px;
+
+  &_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: solid #e8e8e8 1px;
+    padding: 0px 20px;
+    background-color: white;
+  }
+
+  &_item:first-child {
+    border: none;
+  }
+
+  &_item-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &_icon {
+    font-size: 30px;
+    border: solid 3px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  &_total-icon {
+    color: #7783c3;
+  }
+
+  &_active-icon {
+    color: #4dc794;
+  }
+  
+  &_suspended-icon {
+    color: #f71c6ad9;
+  }
+
+  &_item-title {
+    margin-left: 10px;
+    color: #717075;
+  }
+
+  &_item-number {
+    font-weight: 500;
+  }
+}

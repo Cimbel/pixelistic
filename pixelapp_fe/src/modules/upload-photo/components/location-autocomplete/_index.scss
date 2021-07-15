@@ -1,0 +1,32 @@
+.location-autocomplete{
+
+.autocomplete{
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.variants{
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.search-loc{
+  background-color: white;
+  padding: 5px;
+  border: 1px #a0c4ff solid;
+  border-bottom: none;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.selected{
+  background-color: #a0c4ff;
+  cursor: pointer;
+}
+
+}

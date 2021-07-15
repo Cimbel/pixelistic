@@ -1,0 +1,13 @@
+#dashboard-btn {
+  $btn-heigth: 40px;
+
+  margin-left: 10px !important;
+  padding: 0 5px;
+  height: $btn-heigth;
+
+  .link {
+    display: flex;
+    align-items: center;
+    height: $btn-heigth;
+  }
+}

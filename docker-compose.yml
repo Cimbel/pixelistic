@@ -1,0 +1,50 @@
+---
+version: "3.8"
+services:
+  pixelapp_fe:
+    image: cimbel/pixelapp_fe:latest
+    container_name: pixelapp_fe
+    env_file:
+      - .env
+    ports:
+      - 80:80
+    networks:
+      - fronted
+    depends_on:
+      - pixelapp_be
+  pixelapp_be:
+    image: cimbel/pixelapp_be:latest
+    container_name: pixelapp_be
+    env_file:
+      - .env
+    ports:
+      - 3000:3000
+    networks:
+      - backend
+      - fronted
+    depends_on:
+      - mongo_db
+  mongo_db:
+    image: mongo
+    container_name: mongo_db
+    env_file:
+      - .env
+    restart: always
+    environment:
+      MONGO_INITDB_DATABASE: ${DB_NAME}
+      MONGO_INITDB_ROOT_USERNAME: ${DB_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${DB_PASS}
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - 27017:27017
+    networks:
+      - backend
+networks:
+  fronted:
+    driver: bridge
+  backend:
+    driver: bridge
+volumes:
+  mongodb_data:
+    driver: local

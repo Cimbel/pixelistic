@@ -1,0 +1,148 @@
+.photo-upload{
+  text-align: center;
+  margin-bottom: 50px;
+   
+  .file-input{
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+ 
+
+  .empty-photo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 400px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px dashed $photo-upload-panel;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+   
+
+    label:hover{
+      opacity: 0.7;
+      cursor:pointer;
+    }
+    svg{
+      width: 70px;
+      height: 70px;
+      z-index: -1;
+    }
+  }
+
+  .drop {
+    border: 2px dashed #9d52e4;
+    opacity: 0.7;
+    background-color: #e7e7e7;
+    background-image: url('./media//dropzone.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100px;
+  }
+
+  .hidden-btn{
+    display: none;
+  }
+  .post-creator{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+  
+     .fix{
+       display: flex;
+       text-align: left;
+       background-color: $body-background;
+       border-bottom: 1px $photo-upload-panel solid;
+       padding: 2px 2px;
+       height: 100%;
+
+       svg{
+         opacity: 0;
+       }
+     }
+
+    .photo-title{
+      display: flex;
+      flex-direction: row;
+      .title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+        width: 50%;
+        text-align: left;
+        background-color: $photo-upload-panel;
+        color: white;
+        padding: 2px 2px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: small;
+        height: 100%;
+        position: relative;
+
+        p{
+          margin: 0;
+          padding: 0;
+        }
+
+        .close-photo-btn{
+          margin-left: auto;
+          color: #c21c1c;
+          cursor: pointer; 
+        }
+
+        .close-photo-btn:hover{
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .photo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 10px;
+
+      .photo-panel{
+        display: flex;
+        flex-direction: column;
+        background-color: $photo-upload-panel;
+        margin-right: 2px;
+        
+        label {
+          margin: 5px;
+          cursor: pointer;
+        }
+        
+        label:hover svg{
+          color: rgba($color: #ffffff, $alpha: 0.7);
+        }
+
+        svg{
+          color: white;
+        }
+      }
+      
+      .canvas {
+        display: block;
+        max-width: 100%;
+        min-width: 250px;
+        max-height: 500px;
+        border: 1px solid $photo-upload-panel;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+

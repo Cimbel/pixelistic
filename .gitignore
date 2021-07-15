@@ -1,0 +1,4 @@
+pixelapp_be/const/aws-config.json
+.env
+pixelapp_be/node_modules
+pixelapp_fe/node_modules

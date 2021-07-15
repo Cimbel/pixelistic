@@ -1,0 +1,12 @@
+# dependencies
+node_modules/
+
+#production
+/build
+
+/package-lock.json
+/yarn.lock
+/index.css
+__snapshots__/
+/e2e-config
+/e2e/photo.jpg

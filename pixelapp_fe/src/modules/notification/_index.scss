@@ -1,0 +1,25 @@
+.header{
+    .notifications-icon {
+        font-size: 36px;
+    }
+    .notifWidth{
+        min-width:340px;
+    }
+    .notif-item-container{
+        display: flex;
+        flex-direction: row;
+        padding: 7px 20px;
+        background-color: #f1efef;
+        align-items:center; 
+    }
+    .notif-sub-container, .notif-sub-container-2{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        align-items:center;
+    }
+    .notif-sub-container-2 {
+        margin-left: auto;
+    }
+    
+}

@@ -1,0 +1,13 @@
+.followings-list {
+  width: 100%;
+  height: 60vh;
+  box-sizing: border-box;
+  border: 2px solid $light-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .bottom-nav {
+    background-color: #E0E0E0;
+  }
+}

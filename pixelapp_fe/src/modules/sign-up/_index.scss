@@ -1,0 +1,65 @@
+.sign-up {
+  margin-top: 40px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .signup-container,
+  .login-container_link {
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+  }
+
+  .login-container_link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px auto 40px;
+    padding: 20px 0;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding: 30px 0 15px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .divider {
+    text-align: center;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+  }
+
+  .submit-btn {
+    margin: 10px auto 20px;
+  }
+
+  .add-icon {
+    margin-right: 10px;
+  }
+
+  .msg {
+    margin: 0;
+    text-align: center;
+    color: limegreen;
+    height: 20px;
+  }
+
+  .err-msg{
+    color: #f34b4b;
+  }
+
+  .sign-in-link {
+    color: $dark-blue;
+    font-weight: bold;
+  }
+}

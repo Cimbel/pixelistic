@@ -1,0 +1,82 @@
+.following-item {
+  .exp-summary {
+    padding: 0 15px;
+  }
+  
+  .chip {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 16px;
+    background-color: #03A9F4;
+  }
+
+  .avatar {
+    background-color: $light-cyan;
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+  }
+
+  .nickname {
+    margin: 0;
+  }
+
+  .status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .status-online {
+    background-color: rgb(111, 243, 111);
+  }
+
+  .status-offline {
+    background-color: $light-grey;
+  }
+
+  .badge {
+    margin: 0 10px 0 auto;
+
+    path:first-child {
+      fill: $dark-blue;
+    }
+  }
+
+  .exp-details {
+    display: flex;
+    align-items: center;
+  }
+
+  .btn {
+    height: 35px;
+    padding: 0 5px;
+    background-color: $light-cyan;
+  }
+
+  .msgs-btn {
+    margin-left: 15px;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    color: #fff;
+
+    svg {
+      margin-left: 15px;
+      color: $dark-blue;
+    }
+  }
+
+  .favorite {
+    margin-left: 40px;
+  }
+}

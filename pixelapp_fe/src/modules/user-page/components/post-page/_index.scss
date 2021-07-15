@@ -1,0 +1,57 @@
+.post-page{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  outline: 0;
+  left: 0;
+  top:0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index:10000000000000;
+  overflow-y: auto;
+
+  .icon{
+    width: 50px;
+    height: 50px; 
+  }
+ 
+  .nav-btn {
+    top:30%;
+    position: fixed;
+  }
+
+  .nav-btn-left{
+    left:10px;
+  }
+
+  .nav-btn-right{
+    right:10px;
+  }
+
+  .post-info{
+    display: block;
+    background-color: white;
+    overflow-y: auto;
+    display: inline-block;
+    padding-left: 10px;
+    width: 350px;
+    border-left: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .photo-cont{
+    max-width: 600px;
+  }
+
+  .post-cont{
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+ 
+  img{
+    max-width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    box-sizing: border-box;
+  }
+}
+

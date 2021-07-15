@@ -1,0 +1,48 @@
+.edit-profile{
+  margin-top: 100px;
+  .file-input{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    }
+  .avatar-nickname{
+    width: 800px;
+    }
+  .nickname{
+    font-weight: 200;
+    font-size: 24px;
+    font-family: $font-arial;
+  }
+  .user-avatar{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+  .change-photo{
+    color: #3897f0;
+    font-weight: 500;
+    padding-top: 5px;
+    font-family: $font-arial;
+    cursor: pointer;
+  }
+  .change-photo:active{
+    color: #C4CCD5;
+  }
+  .change-photo:hover{
+    color: #3F51B5;
+  }
+  .form{
+    width: 800px;
+  }
+  .save-cancel-btn{
+    width: 85px;
+    height: 20px;
+  }
+  .password-btn{
+    margin: 15px 650px 15px 0;
+    width: 170px;
+  }       
+}

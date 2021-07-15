@@ -1,0 +1,55 @@
+.user-dashboard{
+    margin-top: 100px;
+
+    .user-nickname{
+        font-weight: 200;
+        font-size: 32px;
+        font-family: $font-arial;
+    }
+    .left-pdg{
+        padding-left: 50px;
+    }
+    .nick-btn{
+        display: flex;
+    }
+    .all-infa{
+        padding: 30px 0;
+    }
+    .quantity .number{
+        font-weight: 600;
+    }
+    .followers {
+        padding: 0 20px;
+    }
+     .user-avatar{
+        width: 200px;
+        height: 200px;
+    }
+    .user-name{
+        font-weight: 600;
+    }
+    .location{
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .link-website{
+        color: #003569;
+        font-weight: 650;
+    }
+    .link-website:active{
+        color: #C4CCD5;
+    }
+    #dashboard-btn{
+        margin-left: 10px;
+        padding: 0 5px;
+        height: 40px
+    }
+    .link{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        text-decoration: none;
+        color: black;
+    }
+    
+}

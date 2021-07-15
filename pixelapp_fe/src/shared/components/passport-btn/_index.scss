@@ -1,0 +1,47 @@
+#passport-btn {
+  margin-bottom: 15px;
+  padding: 0;
+
+  .facebook-icon,
+  .google-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  .facebook-icon {
+    background: url("./media//fb-icon.svg") no-repeat 0 0;
+  }
+
+  .google-icon {
+    background: url("./media//google-icon.svg") no-repeat 0 0;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  span {
+    height: 35px;
+  }
+}
+
+#passport-btn.facebook-btn {
+  background-color: #4267B2;
+  &:hover {
+    background-color: rgb(38, 64, 116);
+  }
+}
+
+#passport-btn.google-btn {
+  background-color: #DD4D42;
+  &:hover {
+    background-color: rgb(161, 56, 48);
+  }
+}
+

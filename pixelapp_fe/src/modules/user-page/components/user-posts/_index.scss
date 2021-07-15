@@ -1,0 +1,51 @@
+.user-posts{
+  margin-top: 50px; 
+
+  .posts-header{
+    padding: 10px 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #ccc; 
+    margin-bottom: 25px;
+
+    .right-add-photo{
+      margin-left: 10px;
+      
+    }
+
+    .right-add-photo:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+  }
+}
+
+
+.empty-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+
+  p{
+    font-size: 1.25em;  
+  }
+
+  svg{
+    width: 50px;
+    height: 50px;
+  }
+
+  .add-photo{
+    color: black;
+  }
+
+  .add-photo:hover{
+    opacity: 0.5;
+    
+  }
+}

@@ -1,0 +1,228 @@
+.modal-photo-editor {
+  position: fixed;
+  padding-top: 10px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  cursor: auto; 
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    height: 580px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  .modal-header {
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 500;
+    height: 35px;
+    vertical-align: middle;
+    padding: 1px 16px;
+    background-color: #5cb85c;
+    color: white;
+    /* The Close Button */
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .modal-body {
+    padding: 2px 16px;
+    .imageContainer {
+      float: left;
+      margin: 20px;
+      .filterCanvas {
+        position: absolute;
+      }
+      .drawCanvas {
+        position: absolute;
+      }
+    }
+    .sliders {
+      float: left;
+      padding-left: 10px;
+      text-align: center;
+      .filter {
+        margin: 6px 0;
+        vertical-align: middle;
+      }
+      span.filter-name {
+        display: inline-block;
+        margin: 10px 0 0 0;
+        width: 100px;
+        font-size: 16px;
+        color: #22313f;
+        text-align: left;
+        vertical-align: middle;
+      }
+      .set {
+        position: relative;
+        margin: 10px 20px 0 10px;
+        vertical-align: middle;
+        -webkit-appearance: none;
+        border-radius: 5px;
+        width: 150px;
+        &::-webkit-slider-runnable-track {
+          width: 300px;
+          height: 7px;
+          background: #abb7b7;
+          border: none;
+          border-radius: 3px;
+        }
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          border: none;
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          background: #a7e393;
+          margin-top: -6px;
+          vertical-align: middle;
+        }
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        &[type="color"] {
+          width: 50px;
+        }
+        &[type="text"] {
+          padding: 8px;
+          font-size: 20px;
+          border: 2px solid rgba(255, 255, 255, 0.5);
+          -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) inset,
+            0 2px 2px rgba(0, 0, 0, 0.25);
+          -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) inset,
+            0 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) inset,
+            0 2px 2px rgba(0, 0, 0, 0.25);
+          -moz-border-radius: 10px;
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+          background: rgba(255, 255, 255, 0.5);
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          outline: none;
+          color: #333;
+          width: 100px;
+        }
+      }
+      .draw {
+        text-align: start;
+        input.drowSet {
+          margin: 10px;
+        }
+        .eraser {
+          border: none;
+          vertical-align: middle;
+          width: 25px;
+          height: 25px;
+        }
+        .activeEraser {
+          border: #a7e393 4px solid;
+          margin: -4px;
+          border-radius: 4px;
+        }
+        .sizeDraw {
+          width: 30px;
+          height: 10px;
+          font-size: 15px;
+          cursor: default;
+        }
+      }
+      .addText {
+        text-align: center;
+        font-size: 16px;
+        color: #22313f;
+        .textSpan {
+          margin: auto;
+          display: block;
+          margin-bottom: 10px;
+          font-size: 20px;
+        }
+        input.addTextSet {
+          margin: 20px 5px;
+          cursor: default;
+          width: 22px;
+          height: 10px;
+        }
+        input.textField {
+          width: 215px;
+          height: 10px;
+          margin: 0;
+        }
+        input.sizeInput {
+          width: 40px;
+        }
+        .addTextBtn {
+          padding: 5px;
+          font-size: 20px;
+          border: 2px solid rgba(255, 255, 255, 0.5);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) inset,
+            0 2px 2px rgba(0, 0, 0, 0.25);
+          border-radius: 10px;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          outline: none;
+          color: #333;
+          width: 65px;
+          cursor: pointer;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .photo-editor-btn {
+        width: 100px;
+        padding: 5px;
+        font-size: 20px;
+        margin: 0px 15px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) inset,
+          0 2px 2px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) inset,
+          0 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        color: #333;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

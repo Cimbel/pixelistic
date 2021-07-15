@@ -1,2 +1,3 @@
-# pixelistic
-Pixelistic in docker
+# pixelapp
+
+pixelistic application in docker with ci/cd Jenkins 

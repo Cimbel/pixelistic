@@ -1,0 +1,30 @@
+.search{
+    position: absolute;
+    top: 0;
+    background-color: #f6f6f6;
+    min-width: 160px;
+    padding: 12px 16px;
+    max-height: 250px;
+    .search-item {
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: 12px 16px;
+        &:hover {
+            background-color: #f1f1f1
+        }
+        .avatar{
+            float: left;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+        }
+        .nickname{
+            height: 30px;
+            line-height: 30px;
+            margin-left: 10px;
+        }
+    }
+}
+
+

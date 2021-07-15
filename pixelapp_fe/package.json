@@ -1,0 +1,59 @@
+{
+  "name": "pixelistic",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.4.2",
+    "@material-ui/icons": "^2.0.0",
+    "aws-sdk": "^2.297.0",
+    "axios": "^0.18.0",
+    "body-scroll-lock": "^2.4.6",
+    "javascript-time-ago": "^1.0.31",
+    "material-ui-image": "^3.0.0",
+    "material-ui-upload": "^1.2.1",
+    "moxios": "^0.4.0",
+    "node-sass-chokidar": "^1.3.3",
+    "react": "^16.4.1",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.4.2",
+    "react-facebook-login": "^4.0.1",
+    "react-google-login": "^3.2.1",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-router-modal": "^1.4.1",
+    "react-scripts": "1.1.4",
+    "react-scroll-up": "^1.3.3",
+    "redux": "^4.0.0",
+    "redux-mock-store": "^1.5.3",
+    "redux-thunk": "^2.3.0",
+    "socket.io-client": "^2.1.1"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start": "set PORT=8080 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "e2e": "nightwatch"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "nightwatch": "^0.9.21",
+    "redux-mock-store": "^1.5.3"
+  },
+  "description": "pixelistic_fe",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lv330g/pixelistic_fe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lv330g/pixelistic_fe/issues"
+  },
+  "homepage": "/"
+}
