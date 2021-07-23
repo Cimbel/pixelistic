@@ -25,18 +25,18 @@ phases:
     #If you specify runtime-versions and use an image other than Ubuntu standard image 2.0, the build fails.
     runtime-versions:
        nodejs: latest
-    # commands:
-  # pre_build:
-    # commands:
-      # - command
-    build:
-      commands:
+    commands:
        - node -v
        - npm -v
        - ls
        - cd ./pixelapp_fe && npm install && npm audit fix --force && npm run build
        - ls -la
        - pwd
+  # pre_build:
+    # commands:
+      # - command
+    #build:
+      #commands:
       # - command
  # post_build:
   #  commands:
