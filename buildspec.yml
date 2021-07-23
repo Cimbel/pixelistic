@@ -51,7 +51,7 @@ phases:
     #file-format: JunitXml | CucumberJson
 artifacts:
   files:
-     - ./pixelapp_fe/build
+     - ./build
     # - location
   #name: $(date +%Y-%m-%d)
   #discard-paths: yes
