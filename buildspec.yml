@@ -8,16 +8,19 @@ phases:
       - ls -la
       - node -v
       - npm -v
-      - cd ./pixelapp_be
+      - cd ./pixelapp_fe
       - npm install
       - npm audit fix --force
   build:
     commands:
-      - npm run build
+      - npm run build && cd ../
+      - cd ./pixelapp_be
+      - npm install 
+      - npm audit fix --force && cd ../
   post_build:
     commands:
       - pwd
       - ls -la
 artifacts:
   files:
-     - ./pixelapp_be/**/*
+     - ./pixelapp_fe/**/*
