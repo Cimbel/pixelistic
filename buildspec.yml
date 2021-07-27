@@ -24,4 +24,4 @@ phases:
       - ls -la
 artifacts:
   files:
-     - ./pixelapp_fe/**/*
+     - ./pixelapp_fe/build/**/*
