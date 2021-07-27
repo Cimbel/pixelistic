@@ -11,6 +11,7 @@ phases:
       - cd ./pixelapp_fe
       - npm install
       - npm audit fix --force
+      - env
   build:
     commands:
       - npm run build && cd ../
