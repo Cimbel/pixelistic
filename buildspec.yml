@@ -8,7 +8,7 @@ phases:
       - ls -la
       - node -v
       - npm -v
-      - cd ./pixelapp_fe
+      - cd ./pixelapp_be
       - npm install
       - npm audit fix --force
   build:
@@ -20,4 +20,4 @@ phases:
       - ls -la
 artifacts:
   files:
-     - ./pixelapp_fe/build/**/*
+     - ./pixelapp_be/**/*
