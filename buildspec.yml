@@ -6,19 +6,17 @@ phases:
        python: latest
   pre_build:
     commands:
-      - ls -la
       - cd ./pixelapp_fe
       - npm install
   build:
     commands:
       - npm run build && cd ../
       - cd ./pixelapp_be
+      - echo "{}" > ./const/aws-config.json 
       - npm install && cd ../
   post_build:
     commands:
-      - pwd
       - chmod 700 awscli-workflow.sh
-      - ls -la
       - ./awscli-workflow.sh
 artifacts:
   files:
