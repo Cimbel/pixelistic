@@ -8,11 +8,13 @@ phases:
     commands:
       - cd ./pixelapp_fe
       - npm install
+      - npm audit fix --force
   build:
     commands:
       - npm run build && cd ../
       - cd ./pixelapp_be
-      - npm install && cd ../
+      - npm install 
+      - npm audit fix --force && cd ../
   post_build:
     commands:
       - chmod 700 awscli-workflow.sh
