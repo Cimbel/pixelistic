@@ -3,8 +3,8 @@
 
 # install dependencies
 
-apt update && apt upgrade
-apt install awscli awsebcli unzip zip
+apt update -y && apt upgrade -y
+apt install -y awscli awsebcli unzip zip
 
 
 # create artifact
