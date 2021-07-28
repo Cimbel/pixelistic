@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const session = require('express-session');
-const MongoStore = require('connect-mongo')(session);
+const MongoStore = require('connect-mongo');
 const expressValidator =  require ('express-validator');
 const logger = require('morgan');
 const cors = require('cors');
@@ -18,7 +18,7 @@ const dashboardRouter = require('./routes/dashboard');
 
 const app = express();
 
-mongoose.connect (process.env.MONGO_URI);
+mongoose.connect ("mongodb://", { useNewUrlParser : true, useUnifiedTopology : true });
 
 const db = mongoose.connection;
 db.on('error', console.error.bind (console, 'connection error:'));
@@ -28,8 +28,8 @@ app.use(session({
   secret: 'projectApp',
   resave: true,
   saveUninitialized: false,
-  store: new MongoStore({
-    mongooseConnection: db
+  store: MongoStore.create({
+    mongoUrl: "mongodb://"
   })
 }));
 
