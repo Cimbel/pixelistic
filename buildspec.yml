@@ -9,13 +9,11 @@ phases:
       - ls -la
       - cd ./pixelapp_fe
       - npm install
-      - npm audit fix --force
   build:
     commands:
       - npm run build && cd ../
       - cd ./pixelapp_be
-      - npm install 
-      - npm audit fix --force && cd ../
+      - npm install && cd ../
   post_build:
     commands:
       - pwd
