@@ -3,6 +3,7 @@ phases:
   install:
     runtime-versions:
        nodejs: latest
+       python: latest
   pre_build:
     commands:
       - ls -la
