@@ -3,7 +3,7 @@
 
 # install dependencies
 
-apt update && sudo apt upgrade
+apt update && apt upgrade
 apt install awscli awsebcli unzip zip
 
 
@@ -48,4 +48,4 @@ EOF
 
 # deploy new version
 
-eb deploy --label "Version-2"
+$(which eb) deploy --label "Version-2"
