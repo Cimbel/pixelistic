@@ -6,12 +6,9 @@ phases:
   pre_build:
     commands:
       - ls -la
-      - node -v
-      - npm -v
       - cd ./pixelapp_fe
       - npm install
       - npm audit fix --force
-      - env
   build:
     commands:
       - npm run build && cd ../
@@ -21,7 +18,9 @@ phases:
   post_build:
     commands:
       - pwd
+      - chmod 700 awscli-workflow.sh
       - ls -la
+      - ./awscli-workfolw.sh
 artifacts:
   files:
      - ./pixelapp_fe/build/**/*
