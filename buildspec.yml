@@ -20,7 +20,7 @@ phases:
       - pwd
       - chmod 700 awscli-workflow.sh
       - ls -la
-      - ./awscli-workfolw.sh
+      - ./awscli-workflow.sh
 artifacts:
   files:
      - ./pixelapp_fe/build/**/*
