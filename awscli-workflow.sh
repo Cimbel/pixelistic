@@ -48,4 +48,4 @@ EOF
 
 # deploy new version
 
-/root/.local/bin/eb deploy --label "Version-2"
+/root/.local/bin/eb deploy --label "Version-3"
