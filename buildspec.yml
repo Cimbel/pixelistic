@@ -2,8 +2,8 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-       nodejs: latest
-       python: latest
+       nodejs: 14
+       python: 3.8
   pre_build:
     commands:
       - cd ./pixelapp_fe
