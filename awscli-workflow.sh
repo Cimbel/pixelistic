@@ -3,8 +3,8 @@
 
 # install dependencies
 
-sudo apt update && sudo apt upgrade
-sudo apt install awscli awsebcli unzip zip
+apt update && sudo apt upgrade
+apt install awscli awsebcli unzip zip
 
 
 # create artifact
@@ -48,4 +48,4 @@ EOF
 
 # deploy new version
 
-~/.local/bin/eb deploy --label "Version-2"
+eb deploy --label "Version-2"
