@@ -52,6 +52,9 @@ ls -la
 pwd
 find / -name "eb" -user root -perm 0755 2> /dev/null
 find / -name "aws" -user root -perm 0755 2> /dev/null
+aws --version
+eb --version
+$(which eb) help
 
 # deploy new version
 
