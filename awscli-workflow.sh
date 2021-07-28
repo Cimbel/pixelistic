@@ -10,11 +10,6 @@ pip3 install awsebcli --user --upgrade 2> /dev/null
 # create artifact
 
 cd ./pixelapp_be
-rm -rf .gitignore Dockerfile
-echo "{" > ./const/aws-config.json
-echo "}" >> ./const/aws-config.json
-ls -la
-ls -la ./const
 zip -r $ARTIFACT_NAME ./* ./**/*
 cd ../ && mkdir my_project_deploy
 cd my_project_deploy && mv ../pixelapp_be/$ARTIFACT_NAME ./
