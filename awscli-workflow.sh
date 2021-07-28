@@ -48,6 +48,8 @@ EOF
 
 # checking if installed
 
+ls -la
+pwd
 find / -name "eb" -user root -perm 0755 2> /dev/null
 find / -name "aws" -user root -perm 0755 2> /dev/null
 
