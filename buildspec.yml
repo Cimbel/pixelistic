@@ -12,7 +12,7 @@ phases:
     commands:
       - npm run build && cd ../
       - cd ./pixelapp_be
-      - echo "{}" > ./const/aws-config.json 
+      - echo "{}" > const/aws-config.json 
       - npm install && cd ../
   post_build:
     commands:
