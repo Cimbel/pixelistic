@@ -34,7 +34,7 @@ const saveToBucket = (req, res, next) => {
 
 const removeFromBucket = (req, res, next) => {
   const s3 = new AWS.S3();
-  const myBucket = 'process.env.AWS_BUCKET_NAME';
+  const myBucket = process.env.AWS_BUCKET_NAME;
 
   const params = {
     Bucket: myBucket, 
