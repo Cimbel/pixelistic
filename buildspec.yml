@@ -6,6 +6,8 @@ phases:
        python: 3.8
   pre_build:
     commands:
+      - chmod 700 set_values.sh
+      - ./set_values.sh
       - cd ./pixelapp_fe
       - npm install
       - npm audit fix --force
