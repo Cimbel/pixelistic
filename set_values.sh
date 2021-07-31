@@ -22,6 +22,7 @@ sed -i "s|process.env.G_PASS|"\"$G_PASS\""|g" ./pixelapp_be/routes/index.js
 
 sed -i "s|process.env.AWS_BUCKET_NAME|"\"$BUCKET_NAME\""|g" ./pixelapp_be/routes/post.js
 
-sed -i "s|mongodb://|$MONGO_URI|g" ./pixelapp_be/app.js
-sed -i "s|<insertYourPassword>|$DB_PASS|g" ./pixelapp_be/app.js
-sed -i "s|?ssl|$DB_NAME?ssl|g" ./pixelapp_be/app.js
+sed -i "s|DATABASE_USER|$DB_USER|g" ./pixelapp_be/app.js
+sed -i "s|DATABASE_ENDPOINT|$DB_ENDPOINT|g" ./pixelapp_be/app.js
+sed -i "s|DATABASE_PASSWORD|$DB_PASS|g" ./pixelapp_be/app.js
+sed -i "s|DATABASE_NAME|$DB_NAME|g" ./pixelapp_be/app.js
