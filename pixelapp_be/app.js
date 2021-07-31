@@ -18,7 +18,7 @@ const dashboardRouter = require('./routes/dashboard');
 
 const app = express();
 
-mongoose.connect ("mongodb://", { useNewUrlParser : true, useUnifiedTopology : true });
+mongoose.connect ("mongodb://DATABASE_USER:DATABASE_PASSWORD@DATABASE_ENDPOINT:27017/DATABASE_NAME?ssl=true&ssl_ca_certs=rds-combined-ca-bundle.pem&retryWrites=false", { useNewUrlParser : true, useUnifiedTopology : true });
 
 const db = mongoose.connection;
 db.on('error', console.error.bind (console, 'connection error:'));
@@ -29,7 +29,7 @@ app.use(session({
   resave: true,
   saveUninitialized: false,
   store: MongoStore.create({
-    mongoUrl: "mongodb://"
+    mongoUrl: "mongodb://DATABASE_USER:DATABASE_PASSWORD@DATABASE_ENDPOINT:27017/DATABASE_NAME?ssl=true&ssl_ca_certs=rds-combined-ca-bundle.pem&retryWrites=false"
   })
 }));
 
