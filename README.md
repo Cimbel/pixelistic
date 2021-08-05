@@ -1,3 +1,3 @@
 # pixelapp
 
-pixelistic application in docker with ci/cd Jenkins
+pixelistic application in docker with ci/cd Jenkins test
